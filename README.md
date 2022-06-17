@@ -18,6 +18,8 @@ Created with CodeSandbox
 
 ## やりたい
 
+- 黒塗りの追加
+- 黒塗りの削除
 - [Changing zIndex](https://konvajs.org/docs/react/zIndex.html)
 - TypeScript 対応
 - スタイリング
