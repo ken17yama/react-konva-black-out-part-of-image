@@ -1,18 +1,27 @@
 import "./styles.css";
-import { Stage, Layer, Image } from "react-konva";
-import useImage from "use-image";
+import { useState } from "react";
+import { Stage, Layer } from "react-konva";
 
-const LionImage = () => {
-  const [image] = useImage("https://konvajs.org/assets/lion.png");
-  return <Image image={image} />;
-};
+import DisplayImage from "./features/DisplayImage";
 
 export default function App() {
+  const [inputURL, setInputURL] = useState("");
+  const [imageSize, setImageSize] = useState({ width: 0, height: 0 });
+
+  const InputImageHandler = (e) => {
+    const URL = window.webkitURL || window.URL;
+    const url = URL.createObjectURL(e.target.files[0]);
+    setInputURL(url);
+  };
+
   return (
-    <Stage width={window.innerWidth} height={window.innerHeight}>
-      <Layer>
-        <LionImage />
-      </Layer>
-    </Stage>
+    <>
+      <input type="file" accept="image/*" onChange={InputImageHandler} />
+      <Stage width={imageSize.width} height={imageSize.height}>
+        <Layer>
+          <DisplayImage inputURL={inputURL} setImageSize={setImageSize} />
+        </Layer>
+      </Stage>
+    </>
   );
 }
