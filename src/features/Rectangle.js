@@ -51,7 +51,8 @@ export default function Rectangle({
             y: node.y(),
             // set minimal value
             width: Math.max(5, node.width() * scaleX),
-            height: Math.max(node.height() * scaleY)
+            height: Math.max(node.height() * scaleY),
+            rotation: node.rotation()
           });
         }}
       />

@@ -12,6 +12,7 @@ let history = [
       y: 10,
       width: 100,
       height: 100,
+      rotation: 0,
       fill: "black",
       id: "rect1"
     },
@@ -20,6 +21,7 @@ let history = [
       y: 100,
       width: 100,
       height: 50,
+      rotation: 0,
       fill: "black",
       id: "rect2"
     }

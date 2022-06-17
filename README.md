@@ -18,7 +18,6 @@ Created with CodeSandbox
 
 ## やりたい
 
-- 角度の保持
 - [Changing zIndex](https://konvajs.org/docs/react/zIndex.html)
 - TypeScript 対応
 - スタイリング
