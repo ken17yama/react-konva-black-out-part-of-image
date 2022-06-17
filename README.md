@@ -14,8 +14,11 @@ Created with CodeSandbox
 - [Canvas Export](https://konvajs.org/docs/react/Canvas_Export.html)
 - [Undo/Redo](https://konvajs.org/docs/react/Undo-Redo.html)
 - [Ref](https://konvajs.org/docs/react/Access_Konva_Nodes.html)
+- [Keep Ratio](https://konvajs.org/docs/select_and_transform/Keep_Ratio.html)
 
 ## やりたい
 
+- 角度の保持
 - [Changing zIndex](https://konvajs.org/docs/react/zIndex.html)
 - TypeScript 対応
+- スタイリング

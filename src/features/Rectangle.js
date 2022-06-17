@@ -58,6 +58,7 @@ export default function Rectangle({
       {isSelected && (
         <Transformer
           ref={trRef}
+          keepRatio={false}
           boundBoxFunc={(oldBox, newBox) => {
             // limit resize
             if (newBox.width < 5 || newBox.height < 5) {
