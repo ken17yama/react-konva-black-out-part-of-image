@@ -1,7 +1,9 @@
 # react-konva-black-out-part-of-image
 
 ユーザーがアップロードした画像の一部を黒塗りし、ダウンロードできるコンポーネントを作成する。
+
 Created with CodeSandbox
+https://codesandbox.io/s/intelligent-liskov-txiirz?file=/README.md
 
 ## 試してみる
 
